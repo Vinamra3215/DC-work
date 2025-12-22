@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from skimage.metrics import peak_signal_noise_ratio, structural_similarity
 
 from dataset.mri_dataset import MRIDataset
-from model.vqvae2 import VQVAE2
+from model.vqvae import VQVAE
 
 DATA_ROOT = "/scratch/b24cm1068/processed"
 SAVE_DIR = "./results"
@@ -38,45 +38,9 @@ val_loader = DataLoader(
     shuffle=False
 )
 
-model = VQVAE2(in_ch=4, hidden_ch=128, num_embeddings=512).to(DEVICE)
+model = VQVAE(in_ch=4, hidden_ch=128, num_embeddings=512, embedding_dim=64).to(DEVICE)
 optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 
-# For generalized figure having generalized loss function
-# # --- TRAIN LOOP ---
-# for epoch in range(1, NUM_EPOCHS + 1):
-#     model.train()
-#     epoch_loss = 0.0
-    
-#     pbar = tqdm(train_loader, desc=f"Epoch {epoch}/{NUM_EPOCHS}")
-#     for batch in pbar:
-#         # Input: Stack of 4 wavelet bands
-#         x_in = batch["input_stack"].to(DEVICE)
-#         x_gt = batch["target_stack"].to(DEVICE)
-
-#         optimizer.zero_grad()
-        
-#         # Forward Pass
-#         x_out, vq_loss = model(x_in)
-
-#         # Loss
-#         recon_loss = F.l1_loss(x_out, x_gt)
-#         loss = recon_loss + 0.25 * vq_loss
-
-#         loss.backward()
-        
-#         # <--- CRITICAL FIX: Gradient Clipping
-#         # This prevents the "White Image" / Exploding Loss
-#         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-        
-#         optimizer.step()
-
-#         epoch_loss += loss.item()
-#         pbar.set_postfix(loss=f"{loss.item():.4f}")
-
-#     avg_loss = epoch_loss / len(train_loader)
-#     print(f"Epoch {epoch} | Train Loss: {avg_loss:.4f}")
-
-# For weighted High Frequency loss function to have better edges
 for epoch in range(1, NUM_EPOCHS + 1):
     model.train()
     epoch_loss = 0.0
