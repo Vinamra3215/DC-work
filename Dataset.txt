@@ -1,0 +1,4 @@
+Zip files of 3D scans of patients 
+from the site : https://zenodo.org/records/7523691
+M4RawV1.1_multicoil_train.zip : https://zenodo.org/records/7523691/files/M4RawV1.1_multicoil_train.zip?download=1
+M4RawV1.1_multicoil_val.zip : https://zenodo.org/records/7523691/files/M4RawV1.1_multicoil_val.zip?download=1
