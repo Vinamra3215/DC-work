@@ -4,7 +4,7 @@ This repository uses publicly available 3D MRI multicoil raw scan data sourced f
 The dataset contains anonymized patient scans intended for research in MRI reconstruction, signal processing, and medical imaging.
 
 
-Dataset Source
+## Dataset Source
 
 Platform: Zenodo
 
@@ -13,7 +13,7 @@ Record ID: 7523691
 Official page: https://zenodo.org/records/7523691
 
 
-Dataset Files
+## Dataset Files
 
 The dataset is provided as compressed ZIP files and is divided into training and validation sets:
 
@@ -28,7 +28,7 @@ Download link:
 https://zenodo.org/records/7523691/files/M4RawV1.1_multicoil_val.zip?download=1
 
 
-Data Characteristics
+## Data Characteristics
 
 3D MRI scans
 
@@ -39,7 +39,7 @@ Anonymized patient data
 Suitable for deep learning–based MRI reconstruction and low-data / accelerated MRI research
 
 
-Usage Notes
+## Usage Notes
 
 Users should follow the licensing and citation requirements specified on the original Zenodo page.
 
@@ -48,6 +48,6 @@ The dataset is intended strictly for research and educational purposes.
 No patient-identifiable information is included.
 
 
-Citation
+## Citation
 
 If you use this dataset, please cite the original authors as mentioned on the Zenodo record page.

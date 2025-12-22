@@ -1,11 +1,11 @@
 # DC Research Work
 
-🧠 3D MRI Reconstruction using Multicoil Raw Data
+## 🧠 3D MRI Reconstruction using Multicoil Raw Data
 
 This repository contains research work focused on 3D MRI reconstruction from multicoil raw k-space data, leveraging modern signal processing and machine learning techniques.
 The project aims to explore efficient reconstruction methods under low-data and accelerated MRI settings, with emphasis on robustness and reconstruction quality.
 
-📌 Project Overview
+## 📌 Project Overview
 
 Magnetic Resonance Imaging (MRI) reconstruction from raw k-space data is a critical problem in medical imaging. Multicoil MRI improves signal quality but increases reconstruction complexity.
 This project investigates reconstruction pipelines using anonymized 3D multicoil MRI scans, targeting:
@@ -18,7 +18,7 @@ Efficient learning from limited or undersampled data
 
 The work is intended for research and experimental purposes.
 
-📂 Dataset
+## 📂 Dataset
 
 The dataset used in this project is publicly available and sourced from Zenodo.
 
@@ -40,7 +40,7 @@ Multicoil 3D MRI raw k-space data for validation
 
 📄 A detailed dataset description is provided in the Dataset.md file.
 
-🧪 Data Characteristics
+## 🧪 Data Characteristics
 
 3D MRI scans
 
@@ -50,7 +50,7 @@ Fully anonymized patient data
 
 Designed for reconstruction and inverse problem research
 
-⚙️ Methodology (High-Level)
+## ⚙️ Methodology (High-Level)
 
 Raw k-space preprocessing
 
@@ -62,15 +62,15 @@ Evaluation on validation scans
 
 (Implementation details may vary across experiments and scripts.)
 
-🧑‍💻 Repository Structure
+## 🧑‍💻 Repository Structure
 
 -----To Do
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 -----To Do
 
-📜 License & Usage
+## 📜 License & Usage
 
 Dataset usage follows the license terms defined on Zenodo
 
@@ -78,11 +78,11 @@ This repository is intended for research and educational use only
 
 No clinical or commercial use is implied
 
-📖 Citation
+## 📖 Citation
 
 If you use this dataset or build upon this work, please cite the original dataset authors as specified on the Zenodo record page.
 
-🤝 Acknowledgements
+## 🤝 Acknowledgements
 
 Zenodo for dataset hosting
 
