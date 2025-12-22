@@ -1,4 +1,4 @@
-Dataset Description – 3D MRI Multicoil Scans
+# Dataset Description – 3D MRI Multicoil Scans
 
 This repository uses publicly available 3D MRI multicoil raw scan data sourced from Zenodo.
 The dataset contains anonymized patient scans intended for research in MRI reconstruction, signal processing, and medical imaging.

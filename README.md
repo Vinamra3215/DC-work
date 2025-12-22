@@ -1,4 +1,4 @@
-# DC-work
+# DC Research Work
 
 🧠 3D MRI Reconstruction using Multicoil Raw Data
 
