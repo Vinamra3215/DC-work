@@ -38,7 +38,7 @@ Multicoil 3D MRI raw k-space data for training
 M4RawV1.1_multicoil_val.zip
 Multicoil 3D MRI raw k-space data for validation
 
-📄 A detailed dataset description is provided in the dataset.md file.
+📄 A detailed dataset description is provided in the Dataset.md file.
 
 🧪 Data Characteristics
 
